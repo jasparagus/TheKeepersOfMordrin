@@ -5,7 +5,9 @@ This document contains templates for generating or re-generating artwork for the
 # Picturebooks
 
 ## Base Prompt: Art Style
-The art style of the output image is watercolor with overlapping colors, soft edges, and with cute, friendly characters from a childrens book. The image is relatively simple, avoiding complex details and instead relying on rich colors to convey whimsy. Characters are painted with lanky proportions and stylized facial features.
+Tested Prompt (works well): Watercolor painting style with soft, translucent washes and visible brushstrokes creating gentle textures; delicate, flowing linework defines forms without harsh outlines; warm earthy tones dominate—greens, browns, ochres—with bright accents of gold, pink, and orange; overall aesthetic is whimsical, luminous, and painterly, evoking hand-drawn fantasy illustration with an airy atmosphere.
+
+Was: The art style of the output image is watercolor with overlapping colors, soft edges, and with cute, friendly characters from a childrens book. The image is relatively simple, avoiding complex details and instead relying on rich colors to convey whimsy. Characters are painted with lanky proportions and stylized facial features.
 
 ## Base Prompt: Character
 Retain the character's defining facial features. She has white hair, pointed ears, and green eyes.
