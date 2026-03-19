@@ -112,16 +112,16 @@ These are the home folders for the output materials, in the form of books or cha
 
 Each folder will use a standardized naming scheme to ensure natural sorting and logical grouping of books and their chapters/spreads. 
 
-### Standardized Naming Scheme
+### Standardized Naming Scheme And Contents
 
 **Format:** `{BookNo}_{ShortTitle}_{ComponentNo}. {ComponentName}.md`
 
 *   **`{BookNo}`:** A two-digit zero-padded number (e.g., `01`, `02`) to ensure chronological order of the books/topics within the folder.
 *   **`{ShortTitle}`:** A concise title or abbreviation for the book (e.g., `KoboldCaper`, `TKoM` for The Keepers of Mordrin).
 *   **`{ComponentNo}`:** A two-digit zero-padded number to dictate the internal sorting for that specific book. 
-    *   Use `00` for meta-documents (since 'O' in Outline comes alphabetically before 'T' in Table of Contents, they will sort natively: `00. Outline` then `00. Table of Contents`).
+    *   Use `00` for meta-documents like an Outline or Table of Contents (e.g. `00. Outline` and `00. Table of Contents`).
     *   Use `01`, `02`, `03`... for the actual content chunks to prevent chapter `10` from sorting before chapter `2`.
-*   **`{ComponentName}`:** What the file actually contains (Outline, Table of Contents, Chapter/Picturebook Title).
+*   **`{ComponentName}`:** What the file actually contains (Outline, Table of Contents, Chapter/Picturebook Title, such as `Chapter 1 - The Beginning`).
 
 This will naturally produce a file tree like the following:
 
@@ -136,20 +136,20 @@ This will naturally produce a file tree like the following:
 └── 📄 02_TheSisters_01. The Sisters of the Shadow and Moon.md
 
 📁 2. Chapterbook/
+├── 📄 00_Series Outline.md
 ├── 📄 01_TKoM_00. Outline.md
-├── 📄 01_TKoM_00. Table of Contents.md
-├── 📄 01_TKoM_01. Chapter 1 - The Gathering.md
-├── 📄 01_TKoM_02. Chapter 2 - The Attack.md
+├── 📄 01_TKoM_01. Chapter 1 - Title Example.md
+├── 📄 01_TKoM_02. Chapter 2 - Example Title.md
 ├── 📄 ...
-├── 📄 01_TKoM_09. Chapter 9 - Flight.md
-└── 📄 01_TKoM_10. Chapter 10 - Return.md
+├── 📄 01_TKoM_09. Chapter 9 - Another Title.md
+└── 📄 01_TKoM_10. Chapter 10 - Title of Final Chapter.md
 ```
 
 Segmenting files in this way will allow for powerful individual section editing and rewriting while adhering to the broad outline file.
 
 # Master Campaign Outline
 
-This is the neutral, minimally-editorialized timeline of the campaign's events, mapped to their corresponding session numbers. This serves as the primary reference when outlining all book adaptations. It should be enriched as needed from the formal game materials (`Reference Materials`) when generating chapters.
+This is the neutral, minimally-editorialized timeline of the campaign's events, mapped to their corresponding session numbers. This serves as the master reference when outlining adaptations, and will aid in retrieval of information when resolving issues. It should be enriched and corrected as needed from the reference game materials (`Reference Materials`) when generating chapters.
 
 ## Phase 1: The Gathering & The Beast
 
