@@ -130,7 +130,7 @@ This will naturally produce a file tree like the following:
 ├── 📄 01_KoboldCaper_00. Outline.md
 ├── 📄 01_KoboldCaper_00. Table of Contents.md
 ├── 📄 01_KoboldCaper_01. The Clytin Claw Kobold Caper.md
-│
+├── 📄 ...
 ├── 📄 02_TheSisters_00. Outline.md
 ├── 📄 02_TheSisters_00. Table of Contents.md
 └── 📄 02_TheSisters_01. The Sisters of the Shadow and Moon.md
@@ -142,7 +142,11 @@ This will naturally produce a file tree like the following:
 ├── 📄 01_TKoM_02. Chapter 2 - Example Title.md
 ├── 📄 ...
 ├── 📄 01_TKoM_09. Chapter 9 - Another Title.md
-└── 📄 01_TKoM_10. Chapter 10 - Title of Final Chapter.md
+├── 📄 01_TKoM_10. Chapter 10 - Title of Final Chapter.md
+├── 📄 02_Book2_00. Outline.md
+├── 📄 02_Book2_01. Chapter 1 - The Beginning.md
+├── 📄 ...
+└── 📄 02_Book2_10. Chapter 10 - The End.md
 ```
 
 Segmenting files in this way will allow for powerful individual section editing and rewriting while adhering to the broad outline file.
