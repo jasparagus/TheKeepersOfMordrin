@@ -158,133 +158,133 @@ This is the neutral, minimally-editorialized timeline of the campaign's events, 
 ## Phase 1: The Gathering & The Beast
 
 ### Sessions 1-15
-The party meets on a ship bound for Alaron, thwarting a pirate raid led by Ulfrik.
-Upon arriving at Carraigport, they are hired by Laird Marvyn to investigate the barn of a local necromancer, Suhlur, that is overflowing with the undead.
-Suhlur, a former ally of Queen Alicia Kendrick, was driven mad by guarding a Shard of Kazgoroth and was building an army.
-Defeating Suhlur and discovering his journal leads the Keepers to speak with Alicia Kendric about the Shards and her missing son Gregory. She hires them to rescue him, which she cannot do due to her own duties with the realm.
-Upon arrival in Mintarn, the party meets Florian, the owner of a local Inn (the Twostring). They get their first glimpse of the brutal slaver rings on Mintarn, laying the groundwork for later rebellion. They help Florian rescue his sister from a slaver, whom they kill.
-The party tracks Ulfrik through the Mintarn Great Forest, clashing with a goblin horde.
-At the druid circle in the Great Forest on Mintarn, they discover Ulfrik (allied with Queen Alicia's mentor, Audrin) had kidnapped Gregory Kendrick (Alicia's son) because his blood was needed to summon the demigod Kazgoroth, part of a desperate plan to permanently destroy the beast using the Beastslayer sword.
-Also during this time, Caryndal is established as a masked bard grappling with a broken identity, relying heavily on his illusions.
-Szeth has recently parted ways with his strange but endearing companion, Lift so that each can search out leads into what happened to their people.
+- The party meets on a ship bound for Alaron, thwarting a raid led by Ulfrik, but a young boy (Prince Gregory Kendrick) is kidnapped during the chaos.
+- Upon arriving at Carraigport, they are hired by Laird Marvyn to investigate the barn of a local necromancer, Suhlur, that is overflowing with the undead.
+- Suhlur, a former ally of Queen Alicia Kendrick, was driven mad by guarding a Shard of Kazgoroth and was building an army.
+- Defeating Suhlur and discovering his journal leads the Keepers to speak with Alicia Kendric about the Shards and her missing son Gregory. She hires them to rescue him, which she cannot do due to her own duties with the realm.
+- Upon arrival in Mintarn, the party meets Florian, the owner of a local Inn (the Twostring). They get their first glimpse of the brutal slaver rings on Mintarn, laying the groundwork for later rebellion. They help Florian rescue his sister from a slaver, whom they kill.
+- The party tracks Ulfrik through the Mintarn Great Forest, clashing with a goblin horde.
+- At the druid circle in the Great Forest on Mintarn, they discover Ulfrik (allied with Queen Alicia's mentor, Audrin) had kidnapped Gregory Kendrick (Alicia's son) because his blood was needed to summon the demigod Kazgoroth, part of a desperate plan to permanently destroy the beast using the Beastslayer sword.
+- Also during this time, Caryndal is established as a masked bard grappling with a broken identity, relying heavily on his illusions.
+- Szeth has recently parted ways with his strange but endearing companion, Lift so that each can search out leads into what happened to their people.
 
 ### Sessions 16-20
-The climactic battle against the demigod beast Kazgoroth takes place deep within the Great Forest at the Druid's Grove.
-Together with Audrin and Ulfrik, the party banishes the monster and saves Gregory.
-Earning the formal title *The Keepers of Mordrin*, they forge a lifelong alliance with High Queen Alicia Kendrick.
-They meet the secretive Malthos, a former acquaintance of Aknemeia's father and an uncle figure to Aknemeia who disappeared when she was younger.
+- The climactic battle against the demigod beast Kazgoroth takes place deep within the Great Forest at the Druid's Grove.
+- Together with Audrin and Ulfrik, the party banishes the monster and saves Gregory.
+- Earning the formal title *The Keepers of Mordrin*, they forge a lifelong alliance with High Queen Alicia Kendrick.
+- They meet the secretive Malthos, a former acquaintance of Aknemeia's father and an uncle figure to Aknemeia who disappeared when she was younger.
 
 ## Phase 2: Shadows and False Idols
 
 ### Sessions 21-25
-The Keepers travel to the mining town of Copperwood at the behest of the Queen, and save it from a rogue Ghohlbrorn (an enormous bulette) which had been driven out of the mountains by something dark.
-Seeking to kill the beast (or trace its origins), they delve into the abandoned dwarven city of Thol Aznan.
-There, they first discover the terrifying presence of the shadow dragon Sveraketh and spend weeks suffering from shadow exhaustion.
-They are saved from certain death by the silver dragon Kearastrix, who sacrifices herself to cover their escape and is pulled into the Shadowfell.
+- The Keepers travel to the mining town of Copperwood at the behest of the Queen, and save it from a rogue Ghohlbrorn (an enormous bulette) which had been driven out of the mountains by something dark.
+- Seeking to kill the beast (or trace its origins), they delve into the abandoned dwarven city of Thol Aznan.
+- There, they first discover the terrifying presence of the shadow dragon Sveraketh and spend weeks suffering from shadow exhaustion.
+- They are saved from certain death by the silver dragon Kearastrix, who sacrifices herself to cover their escape and is pulled into the Shadowfell.
 
 ### Sessions 26-45
-Returning from the mountains, the Keepers investigate a mysterious "orc problem" in the Dernall Forest.
-They are ambushed by Kergug's Bloodeyes and discover the mindflayer Saressess impersonating the orc god Gruumsh to enslave the Thuguk, Kazaak, and Garvesh tribes as a personal army and food source.
-This will give him an army for his "Creed of the Convergence."
-With the help of Urtuk, the son of the slain former Chieftan, they defeat the warchief Ogol and decapitate the false idol Saressess.
-During their time in the Dernall Forest, they discover the ancient elven ruins of Doncastle and its corrupted World Bridge, marking their first exposure to the encroaching influence of the Shadowfell.
+- Returning from the mountains, the Keepers investigate a mysterious "orc problem" in the Dernall Forest.
+- They are ambushed by Kergug's Bloodeyes and discover the mindflayer Saressess impersonating the orc god Gruumsh to enslave the Thuguk, Kazaak, and Garvesh tribes as a personal army and food source.
+- This will give him an army for his "Creed of the Convergence."
+- With the help of Urtuk, the son of the slain former Chieftan, they defeat the warchief Ogol and decapitate the false idol Saressess.
+- During their time in the Dernall Forest, they discover the ancient elven ruins of Doncastle and its corrupted World Bridge, marking their first exposure to the encroaching influence of the Shadowfell.
 
 ### Sessions 46-74
-Aknemeia is ambushed by her former mentor, Vizarix (Viz), at Mearn's Meady Mug. Viz was sent by her father to forcefully bring her home, and brings a letter to the girl. Aknemeia sends a letter to her father via Viz, telling him she will not return.
-At the behest of the queen, the party travels to Frostfall Peak in Norland to help the Northmen with a frost giant attack.
-They learn the frost giants have been driven to attack because of an undead elf, Neshrae.
-During this conflict, they learn that Neshrae had tragically sacrificed herself to destroy the local Fey Bridge and stop a Shadow Oni (Talvingas), leaving her trapped between life and undeath—a grim foreshadowing of the planar dangers ahead. She tells them prophesies of the evil in Karador on Gwynneth, leading them to go there.
-Viz uses Aribert to knock Aknemeia out at the Pickled Egg, but it fails. She and Aknemeia reconcile, and Aknemeia forgives Viz. Viz leaves Akmenos Mandorcai's service, and wants to travel with Aknemeia. She eventually grows to become a maternal figure for Aknemeia. [NOTE: I can't place when the 2nd and final interaction occurs, and when Viz joins the party. We'll need to choose something reasonable.]
-The party then leaves for the elven city of Karador on the isle of Gwynneth.
-They reunite with Florian and meet Cendruil, a councilor and powerful mage. They learn about something that came through the Karador portal and killed Florian's father.
-Using the Fey Bridge in Karador, they cross into the Feywild but are waylaid into the Shadowfell by Cendruil in an attempt to kill them. They escape to the Feywild with the help of Caryndal and Silvanus activating the shadowfell worldbridge to the feywild Doncastle.
-Navigating the treacherous Feywilds, they meet the cute fae dragon Nyx (Nystherix), have a run-in with pixies, and travel with Nyx to meet the Council of Four Seasons. The council asks for the help to stop someone called "Talvingas".
-They council guides Eryneth to find Vealas (known locally as Eressea Vinya, The lonely woman") and who is hunting Shathras, minion of Talvingas. Vealas (Vea), is Eryneth's cousin and closest family member while pursuing the shadow mastiff Shathras.
-They slay Shathras and his master Talvingas, cleansing the Feywild of Shar's powerful minions.
-When they return to Karador through the portal, nearly a year has passed on the material plane.
-They learn that Cendruil betrayed Florian's father in a misguided attempt to protect his people, and they realize Cendruil was deceived by "Undomé" (Twilight), who was Darkness (Sveraketh in disguise).
-During their time in the Feywild and Karador, Caryndal begins tracking a deeper connection to nature and the divine, hearing the whispers of Silvanus.
-They return to Caer Callidyrr, participate in a tournament, recconnectwith some of the survivors (Caleb, Ophelie), decorate the Pickled Egg with Aribert, Tyla and Bashir, and then visit the Clytin Claw Kobolds to find that they have been farming bunnies. They end with some lingering suspicions about the Mindflayers.
+- Aknemeia is ambushed by her former mentor, Vizarix (Viz), at Mearn's Meady Mug. Viz was sent by her father to forcefully bring her home, and brings a letter to the girl. Aknemeia sends a letter to her father via Viz, telling him she will not return.
+- At the behest of the queen, the party travels to Frostfall Peak in Norland to help the Northmen with a frost giant attack.
+- They learn the frost giants have been driven to attack because of an undead elf, Neshrae.
+- During this conflict, they learn that Neshrae had tragically sacrificed herself to destroy the local Fey Bridge and stop a Shadow Oni (Talvingas), leaving her trapped between life and undeath—a grim foreshadowing of the planar dangers ahead. She tells them prophesies of the evil in Karador on Gwynneth, leading them to go there.
+- Viz uses Aribert to knock Aknemeia out at the Pickled Egg, but it fails. She and Aknemeia reconcile, and Aknemeia forgives Viz. Viz leaves Akmenos Mandorcai's service, and wants to travel with Aknemeia. She eventually grows to become a maternal figure for Aknemeia. [NOTE: I can't place when the 2nd and final interaction occurs, and when Viz joins the party. We'll need to choose something reasonable.]
+- The party then leaves for the elven city of Karador on the isle of Gwynneth.
+- They reunite with Florian and meet Cendruil, a councilor and powerful mage. They learn about something that came through the Karador portal and killed Florian's father.
+- Using the Fey Bridge in Karador, they cross into the Feywild but are waylaid into the Shadowfell by Cendruil in an attempt to kill them. They escape to the Feywild with the help of Caryndal and Silvanus activating the shadowfell worldbridge to the feywild Doncastle.
+- Navigating the treacherous Feywilds, they meet the cute fae dragon Nyx (Nystherix), have a run-in with pixies, and travel with Nyx to meet the Council of Four Seasons. The council asks for the help to stop someone called "Talvingas".
+- They council guides Eryneth to find Vealas (known locally as Eressea Vinya, The lonely woman") and who is hunting Shathras, minion of Talvingas. Vealas (Vea), is Eryneth's cousin and closest family member while pursuing the shadow mastiff Shathras.
+- They slay Shathras and his master Talvingas, cleansing the Feywild of Shar's powerful minions.
+- When they return to Karador through the portal, nearly a year has passed on the material plane.
+- They learn that Cendruil betrayed Florian's father in a misguided attempt to protect his people, and they realize Cendruil was deceived by "Undomé" (Twilight), who was Darkness (Sveraketh in disguise).
+- During their time in the Feywild and Karador, Caryndal begins tracking a deeper connection to nature and the divine, hearing the whispers of Silvanus.
+- They return to Caer Callidyrr, participate in a tournament, recconnectwith some of the survivors (Caleb, Ophelie), decorate the Pickled Egg with Aribert, Tyla and Bashir, and then visit the Clytin Claw Kobolds to find that they have been farming bunnies. They end with some lingering suspicions about the Mindflayers.
 
 ## Phase 3: The Slavers of Mintarn
 
 ### Sessions 75-95 [NOTE: fix numbers]
-Returning to Mintarn after their time skip, the Keepers visit with Malthos at the Jade Dragon. They discover Vizariz (Viz), and Telerath (Telly) are working alongside him.
-They rediscover the horrific underground slaver empire, and quickly encounter the Ashokans (abolitionists), including Terassxa and Dahan, and enter an initially tense alliance with them.
-Vizarix and Malthos decide to help them aid the Ashokans. The group use their criminal expertise to aid the Keepers against the slaver rings.
-A protracted cold war begins against the slaver rings run by Kreggen and Hazan Halfkind (one of the arms of the tyrant Sable Maolrian).
-To gain leverage over the slaver lords, the Keepers enter Mintarn's grand arena tournament.
-They win the melee and gain an audience with Sable Maolrian, the Four-Armed Tyrant of Mintarn, and her lieutenant, Molva the Many-Eyed.
-During investigation of Hazan, they encounter and defeat Baragazuul.
-Aknemeia and Eryneth lead the assassination of Kreggen.
-The Keepers then systematically dismantle Hazan Halfkind's operations, destroying the slaver ring and establishing an abolitionist council with Dahan.
-During this protracted conflict, Malthos's true nature is unveiled: he is the gold dragon Ioryn, the very same dragon responsible for the tragic death of Aknemeia's mother. His full story is revealed in session 95.
+- Returning to Mintarn after their time skip, the Keepers visit with Malthos at the Jade Dragon. They discover Vizariz (Viz), and Telerath (Telly) are working alongside him.
+- They rediscover the horrific underground slaver empire, and quickly encounter the Ashokans (abolitionists), including Terassxa and Dahan, and enter an initially tense alliance with them.
+- Vizarix and Malthos decide to help them aid the Ashokans. The group use their criminal expertise to aid the Keepers against the slaver rings.
+- A protracted cold war begins against the slaver rings run by Kreggen and Hazan Halfkind (one of the arms of the tyrant Sable Maolrian).
+- To gain leverage over the slaver lords, the Keepers enter Mintarn's grand arena tournament.
+- They win the melee and gain an audience with Sable Maolrian, the Four-Armed Tyrant of Mintarn, and her lieutenant, Molva the Many-Eyed.
+- During investigation of Hazan, they encounter and defeat Baragazuul.
+- Aknemeia and Eryneth lead the assassination of Kreggen.
+- The Keepers then systematically dismantle Hazan Halfkind's operations, destroying the slaver ring and establishing an abolitionist council with Dahan.
+- During this protracted conflict, Malthos's true nature is unveiled: he is the gold dragon Ioryn, the very same dragon responsible for the tragic death of Aknemeia's mother. His full story is revealed in session 95.
 
 ## Phase 4: The Creed of the Convergence
 
 ### Sessions 96-100
-Spurred by visions from the Pendant of Saressess, the Keepers return to Alaron to find the village of Emell slaughtered.
-They encounter Caleb, an apparent survivor whom they later learn is a mindspawn, and they come to realize that the whole village had been infected by the Creed of the Convergence.
-The pendant pulls Szeth toward the mindflayer's wrecked Nautiloid in the Underdark via the Donnbrae Lake cave entrance, where they meet Prili, a highly eccentric but friendly gnome druid.
-The party delves into the Underdark, fighting past the aboleth known as The Nameless One in the Glitterpits, and eventually battles the undead Saressess, now an Illithilich.
+- Spurred by visions from the Pendant of Saressess, the Keepers return to Alaron to find the village of Emell slaughtered.
+- They encounter Caleb, an apparent survivor whom they later learn is a mindspawn, and they come to realize that the whole village had been infected by the Creed of the Convergence.
+- The pendant pulls Szeth toward the mindflayer's wrecked Nautiloid in the Underdark via the Donnbrae Lake cave entrance, where they meet Prili, a highly eccentric but friendly gnome druid.
+- The party delves into the Underdark, fighting past the aboleth known as The Nameless One in the Glitterpits, and eventually battles the undead Saressess, now an Illithilich.
 
 ### Sessions 101-117
-Following Saressess's defeat, the Keepers travel to Baldur's Gate, where Aknemeia confronts her father, Akmenos Mandorcai.
-Szeth discovers his friend Lift has been captured via a Sending spell, learning she's been held in a cell for weeks.
-The party is soon ambushed by Titus and Miela (two ranking members of Shar's forces, the Skybreakers), who admit they took Lift to bait the Keepers.
-They pursue the Skybreakers into the Anauroch desert, battling the Anauroch Phoenix and striking a tenuous bargain with the ancient blue dragon Mesmienaxas for shelter.
-They then launch an ill-fated stealth assault on the flying city of Thultanthar, barely escaping the Skybreakers and the shadow dragon Sveraketh with their lives.
-They barely manage to rescue Lift in the process, but find she has seemingly changed.
-After a brief struggle in which a possessed Lift is killed, the Keepers find that they are able to resurrect her, though she remains shadetouched.
+- Following Saressess's defeat, the Keepers travel to Baldur's Gate, where Aknemeia confronts her father, Akmenos Mandorcai.
+- Szeth discovers his friend Lift has been captured via a Sending spell, learning she's been held in a cell for weeks.
+- The party is soon ambushed by Titus and Miela (two ranking members of Shar's forces, the Skybreakers), who admit they took Lift to bait the Keepers.
+- They pursue the Skybreakers into the Anauroch desert, battling the Anauroch Phoenix and striking a tenuous bargain with the ancient blue dragon Mesmienaxas for shelter.
+- They then launch an ill-fated stealth assault on the flying city of Thultanthar, barely escaping the Skybreakers and the shadow dragon Sveraketh with their lives.
+- They barely manage to rescue Lift in the process, but find she has seemingly changed.
+- After a brief struggle in which a possessed Lift is killed, the Keepers find that they are able to resurrect her, though she remains shadetouched.
 
 ### Sessions 118-130
-The Keepers return to the Underdark via Donnbrae Lake, pushing deeper to root out the remaining Creed forces.
-They are hired to escort the deep gnome Namgie Crystalvein to the Myconids of the Glowing Forest.
-Namgie's kidnapping by Drow forces the Keepers to Che'El Noamuth and the underground lake Nia'alur.
-There they battle the ancient kraken Scyllusraak and discover the temple of Shen Nrasha'a on an island in the center of the lake.
-Here, Selune reveals the true history of her sister Shar and their long-standing conflict.
-She then grants them the Orb of Radiance, a powerful vessel containing the last of her own deific essence, before Selune departs the plane permanently and entrusts the Keepers with the future of the material plane.
+- The Keepers return to the Underdark via Donnbrae Lake, pushing deeper to root out the remaining Creed forces.
+- They are hired to escort the deep gnome Namgie Crystalvein to the Myconids of the Glowing Forest.
+- Namgie's kidnapping by Drow forces the Keepers to Che'El Noamuth and the underground lake Nia'alur.
+- There they battle the ancient kraken Scyllusraak and discover the temple of Shen Nrasha'a on an island in the center of the lake.
+- Here, Selune reveals the true history of her sister Shar and their long-standing conflict.
+- She then grants them the Orb of Radiance, a powerful vessel containing the last of her own deific essence, before Selune departs the plane permanently and entrusts the Keepers with the future of the material plane.
 
 ### Sessions 131-140
-Returning to the surface, the Keepers find Urtuk reaching out for help against Gith slaver-hunters (Adlishar Rrakhma, led by Hurth) pursuing the remnants of the Illithid Saressess's forces.
-Expanding on this conflict, the Keepers eventually broker peace, earn the respect of the Gith, and secure the promise of the *Mirha'Kith* airship if they can repair it.
+- Returning to the surface, the Keepers find Urtuk reaching out for help against Gith slaver-hunters (Adlishar Rrakhma, led by Hurth) pursuing the remnants of the Illithid Saressess's forces.
+- Expanding on this conflict, the Keepers eventually broker peace, earn the respect of the Gith, and secure the promise of the *Mirha'Kith* airship if they can repair it.
 
 ## Phase 5: Forging the Alliance
 
 ### Sessions 141-150
-The party returns to the World Tree in the Feywild to meet with Vea for guidance regarding the impending convergence.
-They secure audience and pivotal support from the Council of the Four Seasons, cementing alliances essential for the coming war against the forces of Shar.
+- The party returns to the World Tree in the Feywild to meet with Vea for guidance regarding the impending convergence.
+- They secure audience and pivotal support from the Council of the Four Seasons, cementing alliances essential for the coming war against the forces of Shar.
 
 ### Sessions 151-155
-Using Soul Binder rings thoughtfully crafted by the fussy scholar Tetrician and their now-trusted friend, the gold dragon Ioryn, the Keepers cross the World Bridge into the Shadowfell at Mount Oskorrath.
-Their goal is to infiltrate the shadow reflection of Skadaurak, the Temple of Oskorrath, to raid its grand library for information on Shar's plans and scout her mustering army.
-They battle the Lonely Gatekeeper at the bridge across the stygian rift, and horrific discoveries confirm the location of her captive dragons. Kearastrix and Hoondarrh are alive, but held in magical prisons that drain their lifeforce.
+- Using Soul Binder rings thoughtfully crafted by the fussy scholar Tetrician and their now-trusted friend, the gold dragon Ioryn, the Keepers cross the World Bridge into the Shadowfell at Mount Oskorrath.
+- Their goal is to infiltrate the shadow reflection of Skadaurak, the Temple of Oskorrath, to raid its grand library for information on Shar's plans and scout her mustering army.
+- They battle the Lonely Gatekeeper at the bridge across the stygian rift, and horrific discoveries confirm the location of her captive dragons. Kearastrix and Hoondarrh are alive, but held in magical prisons that drain their lifeforce.
 
 ### Sessions 156-161
-The Keepers execute a daring rescue mission in the Shadowfell, freeing the dragons Kearastrix and Hoondarrh from Shar's clutches.
-With Kearastrix's help, Szeth’s blade Istamlakh, once forged by Sveraketh, is reforged into the spear of moonlight, Isilrainë.
-Empowered by their newfound allies, the party begins to accept their power and guidance from the old god Silvanus.
-Caryndal undergoes a complete transformation into a reborn cleric and capable avatar of balance, acting as Silvanus's conduit with his special oak shield.
-A tenuous agreement with Hoondarrh is reached to aid in their plans to bring the fight to the Skybreakers.
+- The Keepers execute a daring rescue mission in the Shadowfell, freeing the dragons Kearastrix and Hoondarrh from Shar's clutches.
+- With Kearastrix's help, Szeth’s blade Istamlakh, once forged by Sveraketh, is reforged into the spear of moonlight, Isilrainë.
+- Empowered by their newfound allies, the party begins to accept their power and guidance from the old god Silvanus.
+- Caryndal undergoes a complete transformation into a reborn cleric and capable avatar of balance, acting as Silvanus's conduit with his special oak shield.
+- A tenuous agreement with Hoondarrh is reached to aid in their plans to bring the fight to the Skybreakers.
 
 ## Phase 6: The Planar Convergence
 
 ### Sessions 162-167
-The Keepers board the repaired Gith airship, the *Mirha'Kith*.
-Accompanied by their dragon allies, they engage in a spectacular aerial battle against the Skybreakers at the flying city of Thultanthar.
-The Keepers breach the city and battle the corrupted shadow dragon, Sveraketh and his Skybreaker forces.
-Determining he is too far gone, Kearastrix shatters the dark crystal fueling the city's power, crashing Thultanthar into the desert and destroying it once and for all.
-Kearastrix weeps for her lost love, Sveraketh, who has a brief moment of reflection in his final moments.
+- The Keepers board the repaired Gith airship, the *Mirha'Kith*.
+- Accompanied by their dragon allies, they engage in a spectacular aerial battle against the Skybreakers at the flying city of Thultanthar.
+- The Keepers breach the city and battle the corrupted shadow dragon, Sveraketh and his Skybreaker forces.
+- Determining he is too far gone, Kearastrix shatters the dark crystal fueling the city's power, crashing Thultanthar into the desert and destroying it once and for all.
+- Kearastrix weeps for her lost love, Sveraketh, who has a brief moment of reflection in his final moments.
 
 ### Sessions 168-170
-As the walls between the planes begin to tear open and the convergence nears, the Keepers travel to Baldur's Gate to convince the Council of Four to mobilize the world's armies against the encroaching shadow incursions.
-Caryndal calls a council of Silvanus's followers to aid in their plans. [NOTE: confirm]
+- As the walls between the planes begin to tear open and the convergence nears, the Keepers travel to Baldur's Gate to convince the Council of Four to mobilize the world's armies against the encroaching shadow incursions.
+- Caryndal calls a council of Silvanus's followers to aid in their plans. [NOTE: confirm]
 
 ### Sessions 171-176
-The final incursion into the void.
-Partially stripped of their magic by Shar's oppressive domain, the Keepers rely on their willpower and the Orb of Radiance to restore their powers.
-Using the Orb's stored divine essence, they defeat the Avatar of Shar, and unite her freed spirit with that of her sister Selune.
-This mends the rift between the two goddesses, restoring balance to the cosmos and saving the material plane.
+- The final incursion into the void.
+- Partially stripped of their magic by Shar's oppressive domain, the Keepers rely on their willpower and the Orb of Radiance to restore their powers.
+- Using the Orb's stored divine essence, they defeat the Avatar of Shar, and unite her freed spirit with that of her sister Selune.
+- This mends the rift between the two goddesses, restoring balance to the cosmos and saving the material plane.
 
 # Flavor
 Need: a list of fun, flavorful events from the campaign that can be interwoven into the main outline as needed and as befits the story adaptation. This is a section dedicated to the "fun" asides and subplots from the world: running jokes and flavorful moments that breathe life into the story. Examples: the evolution of the Pickled Egg tavern and its owner; the recurring confusion of Melito as we use his temple for a base of operations; Tetrician and his surprise; the cute pet fae dragon Nyx; the Clytin Claw Kobolds and their rabbit farming. These must be interwoven into the main narrative at natural locations to add flavor and "lived-in" feel to the world and its story. This should provide a bit of background for each and natural suggestions for when/where to incorporate them.
