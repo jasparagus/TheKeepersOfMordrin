@@ -96,7 +96,7 @@ When parsing these massive exports, the AI should employ the following strategy 
 This directory serves as the repository for draft images, character designs, and image generation resources. It contains a "prompt.md" file which curates "base prompts" for generating consistently-styled images (via image-to-image or text-to-image) for the various adaptations.
 
 ###  Scenes
-The various "flavor" images and battlemaps, etc., used for reference.
+The various "flavor" images and battlemaps, etc., used for reference and adapted into images for the books.
 
 ### Actors
 Images of the characters from the story
@@ -104,7 +104,7 @@ Images of the characters from the story
 
 ## Output Folders
 
-These are the home folders for the output materials. By co-locating compiled outputs (`.pdf`) and chapter-specific inline illustration images (`.png`) along with the raw text (`.md`), we prevent relative linking issues and keep assets logically grouped within their respective adaptation folders.
+These are the home folders for the various output materials, such as chapter text and outlines, corresponding to the various targeted adaptations. By co-locating compiled outputs (`.pdf`) and chapter-specific inline illustration images (`.png`) along with the raw text (`.md`), we prevent relative linking issues and keep assets logically grouped within their respective adaptation folders.
 
 The three subfolders correspond to the 3 adaptations:
 
