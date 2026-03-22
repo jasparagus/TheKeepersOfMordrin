@@ -93,10 +93,10 @@ When parsing these massive exports, the AI should employ the following strategy 
 - **VTT Syntax & Mechanics**: Seamlessly ignore or translate Virtual TableTop data-tags (e.g., `@Actor[Name]`) into natural language. Ignore game mechanics (dice rolls, XP, HP/AC) and out-of-character banter, focusing solely on translating the narrative intent.
 
 ## Images
-Images that will be used in the various adaptations. These must eventually be turned into an expressive, artistically consistent style. This directory will contain a "prompt.md" file which curates "base prompts" for generating or re-generating consistently-styled images (via image-to-image or text-to-image) for the various adaptations.
+This directory serves as the repository for draft images, character designs, and image generation resources. It contains a "prompt.md" file which curates "base prompts" for generating consistently-styled images (via image-to-image or text-to-image) for the various adaptations.
 
 ###  Scenes
-The various "flavor" images and battlemaps, etc., to be adapted into images for the books.
+The various "flavor" images and battlemaps, etc., used for reference.
 
 ### Actors
 Images of the characters from the story
@@ -104,7 +104,9 @@ Images of the characters from the story
 
 ## Output Folders
 
-These are the home folders for the output materials, in the form of books or chapters, corresponding to the three targeted adaptations, each of which will be housed in their respective folder. The three subfolders correspond to the 3 adaptations:
+These are the home folders for the output materials. By co-locating compiled outputs (`.pdf`) and chapter-specific inline illustration images (`.png`) along with the raw text (`.md`), we prevent relative linking issues and keep assets logically grouped within their respective adaptation folders.
+
+The three subfolders correspond to the 3 adaptations:
 
 1. Picturebook
 2. Chapterbook
@@ -114,7 +116,10 @@ Each folder will use a standardized naming scheme to ensure natural sorting and 
 
 ### Standardized Naming Scheme And Contents
 
-**Format:** `{BookNo}_{ShortTitle}_{ComponentNo}. {ComponentName}.md`
+**Markdown Format:** `{BookNo}_{ShortTitle}_{ComponentNo}. {ComponentName}.md`
+**Compiled PDF Format:** `{BookNo}_{ShortTitle}_[Full Book Title].pdf` (e.g., `01_TKoM_00_The Keepers of Mordrin.pdf`)
+**Inline Image Format (Chapterbook):** `{BookNo}_{ShortTitle}_{ComponentNo}. {ComponentName}.{ImageNumber}.png` (e.g., `01_TKoM_01. Chapter 1.1.png`)
+**Inline Image Format (Picturebook):** `{BookNo}_{ShortTitle}_s{SpreadNumber}.png` (e.g., `01_KoboldCaper_s1.png`)
 
 *   **`{BookNo}`:** A two-digit zero-padded number (e.g., `01`, `02`) to ensure chronological order of the books/topics within the folder.
 *   **`{ShortTitle}`:** A concise title or abbreviation for the book (e.g., `KoboldCaper`, `TKoM` for The Keepers of Mordrin).
