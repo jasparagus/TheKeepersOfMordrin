@@ -11,6 +11,23 @@ except ImportError:
     print("Please install it by running: python -m pip install fpdf2")
     sys.exit(1)
 
+# --- PDF CONFIGURATION ---
+FONT_MAIN = "Times"
+FONT_HEADER = "Helvetica"
+FONT_TOC_BODY = "Courier"
+
+SIZE_TITLE = 36
+SIZE_TOC_TITLE = 24
+SIZE_TOC_BODY = 14
+SIZE_H1 = 22
+SIZE_H2 = 18
+SIZE_MAIN = 16
+
+# Intra-paragraph line height (should be around 1.15x to 1.5x the main size in points)
+# 16pt font is roughly 5.6mm. 9mm line height provides a comfortable 1.5x spacing.
+INTRA_PADDING = 9 
+# -------------------------
+
 def sanitize_text(text):
     """Replace common unicode characters not supported by standard FPDF core fonts."""
     if not isinstance(text, str):
@@ -25,7 +42,7 @@ def render_toc(pdf, outline):
     # This function is called by fpdf2 to render the TOC page(s)
     pdf.set_y(30)
     pdf.set_x(pdf.l_margin)
-    pdf.set_font("Helvetica", "B", 24)
+    pdf.set_font(FONT_HEADER, "B", SIZE_TOC_TITLE)
     epw = getattr(pdf, 'epw', 170)
     try:
         pdf.cell(w=epw, h=15, txt="Table of Contents", align="C", new_x="LMARGIN", new_y="NEXT")
@@ -33,7 +50,7 @@ def render_toc(pdf, outline):
         pdf.cell(epw, 15, "Table of Contents", align="C", ln=1)
     
     pdf.ln(10)
-    pdf.set_font("Courier", "", 14)
+    pdf.set_font(FONT_TOC_BODY, "", SIZE_TOC_BODY)
     
     for section in outline:
         title = sanitize_text(section.name)
@@ -61,7 +78,7 @@ def render_toc(pdf, outline):
 class BookPDF(FPDF):
     def header(self):
         if self.page_no() > 2:
-            self.set_font("Helvetica", "I", 10)
+            self.set_font(FONT_HEADER, "I", 10)
             self.set_text_color(150, 150, 150)
             self.cell(0, 10, "The Keepers of Mordrin", align="C")
             self.set_text_color(0, 0, 0)
@@ -70,14 +87,14 @@ class BookPDF(FPDF):
     def footer(self):
         if self.page_no() > 1:
             self.set_y(-15)
-            self.set_font("Helvetica", "I", 10)
+            self.set_font(FONT_HEADER, "I", 10)
             self.set_text_color(150, 150, 150)
-            # Use format "- 1 -" for page numbers
             self.cell(0, 10, f"- {self.page_no()} -", align="C")
             self.set_text_color(0, 0, 0)
 
-def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Keepers of Mordrin"):
+def generate_book(folder_path, output_pdf="01_TKoM_00_The Keepers of Mordrin.pdf", book_title="The Keepers of Mordrin"):
     folder = Path(folder_path)
+    output_path = folder / output_pdf
     if not folder.exists():
         print(f"Directory not found: {folder}")
         return
@@ -102,9 +119,9 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
     
     # 1. Title Page
     pdf.add_page()
-    pdf.set_font("Helvetica", "B", 36)
+    pdf.set_font(FONT_HEADER, "B", SIZE_TITLE)
     pdf.ln(80)
-    # Title Case, instead of Upper Case
+    
     safe_title = sanitize_text(book_title)
     epw = getattr(pdf, 'epw', 170)
     try:
@@ -112,9 +129,9 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
     except TypeError:
         pdf.cell(0, 20, safe_title, align="C", ln=1)
         
-    # We omit the subtitle to simplify
-    
+    # 2. Table of Contents Placeholder
     if hasattr(pdf, 'insert_toc_placeholder'):
+        pdf.add_page() # Force TOC to be on its own dedicated separate page
         pdf.insert_toc_placeholder(render_toc, pages=1)
     else:
         print("Note: installed fpdf2 version does not support automatic TOC generation. Skipping TOC.")
@@ -126,16 +143,13 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
         with open(file_path, "r", encoding="utf-8") as file:
             lines = file.readlines()
             
-        INTRA_PADDING = 8 # Represents proper 1.5x spacing
-            
         for line in lines:
             line = line.strip()
             
             # Markdown Separator
-            if line == "---" or line == "***" or line == "- - -":
+            if line in ["---", "***", "- - -", "* * *"]:
                 pdf.ln(8)
                 y = pdf.get_y()
-                # Draw a sleek line in the center
                 center = pdf.w / 2
                 pdf.set_draw_color(150, 150, 150)
                 pdf.set_line_width(0.5)
@@ -153,7 +167,7 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
             # Headers
             if line.startswith("# "):
                 header_text = sanitize_text(line.lstrip("#").strip())
-                pdf.set_font("Helvetica", "B", 22) # Headers stay sans-serif
+                pdf.set_font(FONT_HEADER, "B", SIZE_H1)
                 
                 if hasattr(pdf, 'start_section'):
                     pdf.start_section(header_text)
@@ -166,7 +180,7 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                 continue
             elif line.startswith("##"):
                 header_text = sanitize_text(line.lstrip("#").strip())
-                pdf.set_font("Helvetica", "B", 18)
+                pdf.set_font(FONT_HEADER, "B", SIZE_H2)
                 try:
                     pdf.cell(0, 12, txt=header_text, new_x="LMARGIN", new_y="NEXT")
                 except TypeError:
@@ -182,7 +196,6 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                 
                 if img_path.exists():
                     pdf.ln(5)
-                    # Changed width to 25% of page height
                     target_h = getattr(pdf, 'eph', 257) * 0.25
                     try:
                         pdf.image(str(img_path), h=target_h, x="C")
@@ -194,9 +207,8 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                 continue
 
             # Standard Text Paragraph
-            # Switching body text to serif font: "Times"
             line = sanitize_text(line)
-            pdf.set_font("Times", "", 14)
+            pdf.set_font(FONT_MAIN, "", SIZE_MAIN)
             
             parts = re.split(r'(\*\*.*?\*\*|\*.*?\*|_.*?_)', line)
             
@@ -205,27 +217,27 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                     continue
                 
                 if part.startswith('**') and part.endswith('**'):
-                    pdf.set_font("Times", "B", 14)
+                    pdf.set_font(FONT_MAIN, "B", SIZE_MAIN)
                     pdf.write(INTRA_PADDING, part[2:-2])
                 elif (part.startswith('*') and part.endswith('*')) or (part.startswith('_') and part.endswith('_')):
-                    pdf.set_font("Times", "I", 14)
+                    pdf.set_font(FONT_MAIN, "I", SIZE_MAIN)
                     pdf.write(INTRA_PADDING, part[1:-1])
                 else:
-                    pdf.set_font("Times", "", 14)
+                    pdf.set_font(FONT_MAIN, "", SIZE_MAIN)
                     pdf.write(INTRA_PADDING, part)
                     
             # Move down properly at the end of the written paragraph text
             pdf.ln(INTRA_PADDING)
 
-    print(f"Saving PDF to {output_pdf}...")
-    pdf.output(output_pdf)
+    print(f"Saving PDF to {output_path}...")
+    pdf.output(str(output_path))
     print("Done!")
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Generate PDF Book from Markdown Chapters")
     parser.add_argument("folder", nargs="?", default="2. Chapterbook", help="Path to the folder containing chapter markdown files")
-    parser.add_argument("--output", default="The_Keepers_of_Mordrin.pdf", help="Output PDF file name")
+    parser.add_argument("--output", default="01_TKoM_00_The Keepers of Mordrin.pdf", help="Output PDF file name")
     parser.add_argument("--title", default="The Keepers of Mordrin", help="Book title")
     
     args = parser.parse_args()
