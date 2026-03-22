@@ -20,9 +20,14 @@ Retain the character's defining facial features. She has white hair, pointed ear
 
 * **SZETH**: Retain the character's defining facial features. He is young, bald, nimble, and slender. He is wearing a simple white robe and simple white cloak with a tall collar and a brown belt. He is wearing brown sandals. He is holding a long spear with a wooden handle. The spear has magical writing on it.
 
+# Chapterbooks
 
+## Base Prompt: 
+The art style is simple black and white pen vignette sketch. It has heavy lines and a high fantasy RPG theme. The image is simplistic, and the background is plain white.
 
-# Other
+The artwork depicts a fantasy pirate village, with boats at the docks. There are taverns and a market at the shore.
+
+# Miscellaneous
 *   **Art Style:** High fantasy, digital painting style (similar to official D&D 5e sourcebooks or Magic: The Gathering card art).
 *   **Lighting:** Dramatic and cinematic. Strong use of chiaroscuro (contrast between light and dark) to emphasize the campaign's core themes of Selune (light) vs. Shar (shadow).
 *   **Color Palette:** Rich, saturated colors. Ethereal blue, green, and silver for scenes involving Selune or fey magic; deep purple and obsidian black for scenes involving Shar, the Shadowfell, or the Underdark.
