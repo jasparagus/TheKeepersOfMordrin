@@ -23,11 +23,14 @@ def sanitize_text(text):
 
 def render_toc(pdf, outline):
     # This function is called by fpdf2 to render the TOC page(s)
+    pdf.set_y(30)
+    pdf.set_x(pdf.l_margin)
     pdf.set_font("Helvetica", "B", 24)
+    epw = getattr(pdf, 'epw', 170)
     try:
-        pdf.cell(0, 15, "Table of Contents", align="C", new_x="LMARGIN", new_y="NEXT")
+        pdf.cell(w=epw, h=15, txt="Table of Contents", align="C", new_x="LMARGIN", new_y="NEXT")
     except TypeError:
-        pdf.cell(0, 15, "Table of Contents", align="C", ln=1)
+        pdf.cell(epw, 15, "Table of Contents", align="C", ln=1)
     
     pdf.ln(10)
     pdf.set_font("Courier", "", 14)
@@ -36,14 +39,22 @@ def render_toc(pdf, outline):
         title = sanitize_text(section.name)
         page = str(section.page_number)
         
-        total_len = 50
-        dots_count = total_len - len(title) - len(page)
-        if dots_count < 1:
-            dots_count = 1
+        # Calculate exactly how many dots fit in the remaining space
+        title_w = pdf.get_string_width(title)
+        page_w = pdf.get_string_width(page)
+        dot_w = pdf.get_string_width(".")
+        
+        # 10mm buffer just to be safe so it doesn't clip
+        avail_w = epw - title_w - page_w - 10
+        
+        num_dots = int(avail_w / dot_w) if dot_w > 0 else 1
+        if num_dots < 1:
+            num_dots = 1
             
-        line_text = f"{title}{'.' * dots_count}{page}"
+        line_text = f"{title} {'.' * num_dots} {page}"
+        
         try:
-            pdf.cell(0, 10, line_text, align="L", new_x="LMARGIN", new_y="NEXT")
+            pdf.cell(0, 10, txt=line_text, align="L", new_x="LMARGIN", new_y="NEXT")
         except TypeError:
             pdf.cell(0, 10, line_text, align="L", ln=1)
 
@@ -61,6 +72,7 @@ class BookPDF(FPDF):
             self.set_y(-15)
             self.set_font("Helvetica", "I", 10)
             self.set_text_color(150, 150, 150)
+            # Use format "- 1 -" for page numbers
             self.cell(0, 10, f"- {self.page_no()} -", align="C")
             self.set_text_color(0, 0, 0)
 
@@ -92,17 +104,16 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
     pdf.add_page()
     pdf.set_font("Helvetica", "B", 36)
     pdf.ln(80)
-    safe_title = sanitize_text(book_title.upper())
+    # Title Case, instead of Upper Case
+    safe_title = sanitize_text(book_title)
+    epw = getattr(pdf, 'epw', 170)
     try:
-        pdf.cell(0, 20, safe_title, align="C", new_x="LMARGIN", new_y="NEXT")
+        pdf.cell(w=epw, h=20, txt=safe_title, align="C", new_x="LMARGIN", new_y="NEXT")
     except TypeError:
         pdf.cell(0, 20, safe_title, align="C", ln=1)
-    pdf.set_font("Helvetica", "I", 18)
-    try:
-        pdf.cell(0, 15, "Chapter Edition", align="C", new_x="LMARGIN", new_y="NEXT")
-    except TypeError:
-        pdf.cell(0, 15, "Chapter Edition", align="C", ln=1)
         
+    # We omit the subtitle to simplify
+    
     if hasattr(pdf, 'insert_toc_placeholder'):
         pdf.insert_toc_placeholder(render_toc, pages=1)
     else:
@@ -115,23 +126,40 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
         with open(file_path, "r", encoding="utf-8") as file:
             lines = file.readlines()
             
+        INTRA_PADDING = 8 # Represents proper 1.5x spacing
+            
         for line in lines:
             line = line.strip()
             
+            # Markdown Separator
+            if line == "---" or line == "***" or line == "- - -":
+                pdf.ln(8)
+                y = pdf.get_y()
+                # Draw a sleek line in the center
+                center = pdf.w / 2
+                pdf.set_draw_color(150, 150, 150)
+                pdf.set_line_width(0.5)
+                pdf.line(center - 20, y, center + 20, y)
+                pdf.set_draw_color(0, 0, 0) # reset
+                pdf.set_line_width(0.2)
+                pdf.ln(12)
+                continue
+            
             if not line:
-                pdf.ln(5)
+                # Add normal extra gap on blank lines for double spacing between paragraphs
+                pdf.ln(INTRA_PADDING) 
                 continue
                 
             # Headers
             if line.startswith("# "):
                 header_text = sanitize_text(line.lstrip("#").strip())
-                pdf.set_font("Helvetica", "B", 22)
+                pdf.set_font("Helvetica", "B", 22) # Headers stay sans-serif
                 
                 if hasattr(pdf, 'start_section'):
                     pdf.start_section(header_text)
                     
                 try:
-                    pdf.cell(0, 15, header_text, align="C", new_x="LMARGIN", new_y="NEXT")
+                    pdf.cell(0, 15, txt=header_text, align="C", new_x="LMARGIN", new_y="NEXT")
                 except TypeError:
                     pdf.cell(0, 15, header_text, align="C", ln=1)
                 pdf.ln(8)
@@ -140,7 +168,7 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                 header_text = sanitize_text(line.lstrip("#").strip())
                 pdf.set_font("Helvetica", "B", 18)
                 try:
-                    pdf.cell(0, 12, header_text, new_x="LMARGIN", new_y="NEXT")
+                    pdf.cell(0, 12, txt=header_text, new_x="LMARGIN", new_y="NEXT")
                 except TypeError:
                     pdf.cell(0, 12, header_text, ln=1)
                 pdf.ln(4)
@@ -154,7 +182,8 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                 
                 if img_path.exists():
                     pdf.ln(5)
-                    target_h = getattr(pdf, 'eph', 257) * 0.2
+                    # Changed width to 25% of page height
+                    target_h = getattr(pdf, 'eph', 257) * 0.25
                     try:
                         pdf.image(str(img_path), h=target_h, x="C")
                     except Exception as e:
@@ -165,9 +194,9 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                 continue
 
             # Standard Text Paragraph
+            # Switching body text to serif font: "Times"
             line = sanitize_text(line)
-            pdf.set_font("Helvetica", "", 14)
-            line_height = 8
+            pdf.set_font("Times", "", 14)
             
             parts = re.split(r'(\*\*.*?\*\*|\*.*?\*|_.*?_)', line)
             
@@ -176,14 +205,17 @@ def generate_book(folder_path, output_pdf="Book_Output.pdf", book_title="The Kee
                     continue
                 
                 if part.startswith('**') and part.endswith('**'):
-                    pdf.set_font("Helvetica", "B", 14)
-                    pdf.write(line_height, part[2:-2])
+                    pdf.set_font("Times", "B", 14)
+                    pdf.write(INTRA_PADDING, part[2:-2])
                 elif (part.startswith('*') and part.endswith('*')) or (part.startswith('_') and part.endswith('_')):
-                    pdf.set_font("Helvetica", "I", 14)
-                    pdf.write(line_height, part[1:-1])
+                    pdf.set_font("Times", "I", 14)
+                    pdf.write(INTRA_PADDING, part[1:-1])
                 else:
-                    pdf.set_font("Helvetica", "", 14)
-                    pdf.write(line_height, part)
+                    pdf.set_font("Times", "", 14)
+                    pdf.write(INTRA_PADDING, part)
+                    
+            # Move down properly at the end of the written paragraph text
+            pdf.ln(INTRA_PADDING)
 
     print(f"Saving PDF to {output_pdf}...")
     pdf.output(output_pdf)
