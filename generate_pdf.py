@@ -14,14 +14,14 @@ except ImportError:
 # --- PDF CONFIGURATION ---
 FONT_MAIN = "Times"
 FONT_HEADER = "Helvetica"
-FONT_TOC_BODY = "Courier"
+FONT_TOC_BODY = "Times"
 
 SIZE_TITLE = 36
 SIZE_TOC_TITLE = 24
-SIZE_TOC_BODY = 14
-SIZE_H1 = 22
-SIZE_H2 = 18
-SIZE_MAIN = 16
+SIZE_TOC_BODY = 16
+SIZE_H1 = 24
+SIZE_H2 = 20
+SIZE_MAIN = 18
 
 # Intra-paragraph line height (should be around 1.15x to 1.5x the main size in points)
 # 16pt font is roughly 5.6mm. 9mm line height provides a comfortable 1.5x spacing.
@@ -196,7 +196,7 @@ def generate_book(folder_path, output_pdf="01_TKoM_00_The Keepers of Mordrin.pdf
                 
                 if img_path.exists():
                     pdf.ln(5)
-                    target_h = getattr(pdf, 'eph', 257) * 0.25
+                    target_h = getattr(pdf, 'eph', 257) * 0.3
                     try:
                         pdf.image(str(img_path), h=target_h, x="C")
                     except Exception as e:
