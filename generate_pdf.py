@@ -2,19 +2,18 @@
 PDF Generation Script for Chapter Books
 
 Usage:
-    python generate_pdf.py [folder_path] [--output OUTPUT_FILE] [--title "Book Title"]
+    python generate_pdf.py [prefix] [--folder FOLDER_PATH] [--output OUTPUT_FILE] [--title "Book Title"]
 
 Examples:
-    # 1. Generate default book from the '2. Chapterbook' folder
-    # This reads all numbered chapters and outputs '01_TKoM_00_The Keepers of Mordrin.pdf'
-    # inside that folder.
-    python generate_pdf.py
+    # 1. Generate default book for prefix '01_TKoM' from the default '2. Chapterbook' folder
+    # This reads all numbered chapters and outputs '01_TKoM_00_The_Keepers_of_Mordrin.pdf'
+    python generate_pdf.py 01_TKoM
 
-    # 2. Generate book from a different folder, specifying the title
-    python generate_pdf.py "3. Novel" --title "The Keepers of Mordrin: The Novel"
+    # 2. Generate book for a different prefix in a different folder
+    python generate_pdf.py 02_KoboldCaper --folder "1. Picturebook" --title "The Clytin Claw Kobold Caper"
 
 Details:
-    - Cover: If an image file (e.g., .png or .jpg) containing "_00" and "Cover" in its 
+    - Cover: If an image file (e.g., .png or .jpg) containing the prefix, "_00", and "Cover" in its 
       filename (like '01_TKoM_00. Cover.png') is found in the target folder, it will 
       automatically be inserted as a full-width cover on the very first page.
     - TOC: A Table of Contents is automatically built from markdown headers starting with `#`.
@@ -38,14 +37,14 @@ except ImportError:
 # --- PDF CONFIGURATION ---
 FONT_MAIN = "Times"
 FONT_HEADER = "Helvetica"
-FONT_TOC_BODY = "Times"
+FONT_TOC_BODY = "Courier"
 
 SIZE_TITLE = 36
 SIZE_TOC_TITLE = 24
-SIZE_TOC_BODY = 16
-SIZE_H1 = 24
-SIZE_H2 = 20
-SIZE_MAIN = 18
+SIZE_TOC_BODY = 14
+SIZE_H1 = 22
+SIZE_H2 = 18
+SIZE_MAIN = 16
 
 # Intra-paragraph line height (should be around 1.15x to 1.5x the main size in points)
 # 16pt font is roughly 5.6mm. 9mm line height provides a comfortable 1.5x spacing.
@@ -116,15 +115,22 @@ class BookPDF(FPDF):
             self.cell(0, 10, f"- {self.page_no()} -", align="C")
             self.set_text_color(0, 0, 0)
 
-def generate_book(folder_path, output_pdf="01_TKoM_00_The Keepers of Mordrin.pdf", book_title="The Keepers of Mordrin"):
+def generate_book(prefix, folder_path="2. Chapterbook", output_pdf=None, book_title="The Keepers of Mordrin"):
     folder = Path(folder_path)
-    output_path = folder / output_pdf
     if not folder.exists():
         print(f"Directory not found: {folder}")
         return
 
+    # Auto-generate the output filename if one wasn't explicitly provided
+    if not output_pdf:
+        safe_out_title = book_title.replace(" ", "_").replace(":", "")
+        output_pdf = f"{prefix}_00_{safe_out_title}.pdf"
+        
+    output_path = folder / output_pdf
+
     md_files = []
-    for f in folder.glob("*.md"):
+    # Only target files that start exactly with the target prefix
+    for f in folder.glob(f"{prefix}*.md"):
         if "00" in f.name or "Outline" in f.name or "Table of Contents" in f.name:
             continue
         md_files.append(f)
@@ -132,17 +138,18 @@ def generate_book(folder_path, output_pdf="01_TKoM_00_The Keepers of Mordrin.pdf
     md_files.sort(key=lambda x: x.name)
     
     if not md_files:
-        print("No valid chapter files found.")
+        print(f"No valid chapter files found for prefix '{prefix}'.")
         return
 
-    print(f"Found {len(md_files)} chapters.")
+    print(f"Found {len(md_files)} chapters for book '{prefix}'.")
 
     pdf = BookPDF(unit="mm", format="A4")
     pdf.set_margins(20, 20, 20)
     pdf.set_auto_page_break(auto=True, margin=20)
     
     # 0. Optional Cover Page
-    cover_files = [f for f in folder.glob("*") if "_00" in f.name and "Cover" in f.name and f.suffix.lower() in [".png", ".jpg", ".jpeg"]]
+    # Look for files exactly matching the book prefix and containing "_00" and "Cover"
+    cover_files = [f for f in folder.glob(f"{prefix}*") if "_00" in f.name and "Cover" in f.name and f.suffix.lower() in [".png", ".jpg", ".jpeg"]]
     if cover_files:
         cover_path = cover_files[0]
         print(f"Found cover image: {cover_path.name}")
@@ -232,7 +239,7 @@ def generate_book(folder_path, output_pdf="01_TKoM_00_The Keepers of Mordrin.pdf
                 
                 if img_path.exists():
                     pdf.ln(5)
-                    target_h = getattr(pdf, 'eph', 257) * 0.3
+                    target_h = getattr(pdf, 'eph', 257) * 0.25
                     try:
                         pdf.image(str(img_path), h=target_h, x="C")
                     except Exception as e:
@@ -272,9 +279,10 @@ def generate_book(folder_path, output_pdf="01_TKoM_00_The Keepers of Mordrin.pdf
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Generate PDF Book from Markdown Chapters")
-    parser.add_argument("folder", nargs="?", default="2. Chapterbook", help="Path to the folder containing chapter markdown files")
-    parser.add_argument("--output", default="01_TKoM_00_The Keepers of Mordrin.pdf", help="Output PDF file name")
+    parser.add_argument("prefix", help="Prefix for the book's files (e.g., '01_TKoM').")
+    parser.add_argument("--folder", default="2. Chapterbook", help="Path to the folder containing chapter markdown files")
+    parser.add_argument("--output", default=None, help="Output PDF file name (defaults to {prefix}_00_{title}.pdf)")
     parser.add_argument("--title", default="The Keepers of Mordrin", help="Book title")
     
     args = parser.parse_args()
-    generate_book(args.folder, args.output, args.title)
+    generate_book(args.prefix, args.folder, args.output, args.title)
