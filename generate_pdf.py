@@ -1,3 +1,27 @@
+"""
+PDF Generation Script for Chapter Books
+
+Usage:
+    python generate_pdf.py [folder_path] [--output OUTPUT_FILE] [--title "Book Title"]
+
+Examples:
+    # 1. Generate default book from the '2. Chapterbook' folder
+    # This reads all numbered chapters and outputs '01_TKoM_00_The Keepers of Mordrin.pdf'
+    # inside that folder.
+    python generate_pdf.py
+
+    # 2. Generate book from a different folder, specifying the title
+    python generate_pdf.py "3. Novel" --title "The Keepers of Mordrin: The Novel"
+
+Details:
+    - Cover: If an image file (e.g., .png or .jpg) containing "_00" and "Cover" in its 
+      filename (like '01_TKoM_00. Cover.png') is found in the target folder, it will 
+      automatically be inserted as a full-width cover on the very first page.
+    - TOC: A Table of Contents is automatically built from markdown headers starting with `#`.
+    - Separators: Markdown lines containing exactly `---` or `***` will be drawn as graphical lines.
+    - Images: Inline markdown images `![Alt](Path)` are rendered centered at 25% page height.
+"""
+
 import os
 import re
 import sys
@@ -117,6 +141,18 @@ def generate_book(folder_path, output_pdf="01_TKoM_00_The Keepers of Mordrin.pdf
     pdf.set_margins(20, 20, 20)
     pdf.set_auto_page_break(auto=True, margin=20)
     
+    # 0. Optional Cover Page
+    cover_files = [f for f in folder.glob("*") if "_00" in f.name and "Cover" in f.name and f.suffix.lower() in [".png", ".jpg", ".jpeg"]]
+    if cover_files:
+        cover_path = cover_files[0]
+        print(f"Found cover image: {cover_path.name}")
+        pdf.add_page()
+        try:
+            # Full page cover
+            pdf.image(str(cover_path), x=0, y=0, w=pdf.w, h=pdf.h)
+        except Exception as e:
+            print(f"Warning: Could not add cover image: {e}")
+            
     # 1. Title Page
     pdf.add_page()
     pdf.set_font(FONT_HEADER, "B", SIZE_TITLE)
