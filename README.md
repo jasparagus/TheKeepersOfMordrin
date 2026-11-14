@@ -22,7 +22,7 @@ Books will often center around approachably-archetyped versions of "Eryneth the 
 ## Main Characters
 
 ### Aknemeia
-- **Physical Description**: A fierce Tiefling woman with prominent horns and the distinct, crimson-hued skin of her infernal heritage. She carries the physical and magical scars of her intense sorcery.
+- **Physical Description**: A fierce Tiefling girl with prominent horns and the distinct, crimson-hued skin of her infernal heritage. She carries the physical and magical scars of her intense sorcery.
 - **Characterization**: Intense, guarded, and occasionally ruthless when protecting those she loves. Grappling with a dark family legacy, she struggles with trust but serves as the undeniable arcane powerhouse of the Keepers. She was gifted magic by a mysterious dragon, later revealed to be Ioryn, the reasons for which she doesn't yet understand. She wrestles with her family's dark legacy and her own identity.
 - **Overall Arc**: A journey of *Forgiveness and Power*. She steps out of the shadow of her crime-lord father, Akmenos Mandorcai, forgives the gold dragon who killed her mother, and claims true ownership over her destiny and magic.
 
