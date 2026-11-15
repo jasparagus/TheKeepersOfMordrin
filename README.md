@@ -13,7 +13,7 @@ Books will often center around approachably-archetyped versions of "Eryneth the 
 
 [TODO: need a consistent ending tagline for each book, perhaps something referencing the patches that The Keepers of Mordrin commissioned and gave to their fans. A way to close out each "chapter", like "and that doesn't even touch on the `...vague allusion to another event...`, but that's a story for another time. Can we interest you in a fine Keepers of Mordrin patch?]
 
-2. **Chapterbook**: targeting 100-200 pages of gradeschool-level text per book, with occasional pictures for young readers ages 5-8. The story will span across multiple books, with each book focusing on a different arc or storyline. Each book will be a fast-paced, character-driven adventure for school-aged kids to read by themselves or with parents. Books will be broken into 10-20 chapters, with a total lenght 600-1200 words per chapter. The stories will remain mostly true to the original themes with minor simplification to remove difficult topics like graphic violence, slavery, and complex political trauma.
+2. **Chapterbook**: targeting 100-200 pages of gradeschool-level text per book, with occasional pictures for young readers ages 6-10. The story will span across multiple books, with each book focusing on a different arc or storyline. Each book will be a fast-paced, character-driven adventure for school-aged kids to read by themselves or with parents. Books will be broken into 10-20 chapters, with a total lenght 600-1200 words per chapter. The stories will remain mostly true to the original themes with minor simplification to remove difficult topics like graphic violence, slavery, and complex political trauma.
 
 3. **Novel**: targeting 350-800 pages which attempts to faithfully reproduce the story in full chapter form. It will deal with all complex themes, using sophisticated vocabulary and exploring the psychological depths of trauma, slavery, and war.
 
@@ -141,7 +141,6 @@ This will naturally produce a file tree like the following:
 └── 📄 02_TheSisters_01. The Sisters of the Shadow and Moon.md
 
 📁 2. Chapterbook/
-├── 📄 00_Series Outline.md
 ├── 📄 01_TKoM_00. Outline.md
 ├── 📄 01_TKoM_01. Chapter 1 - Title Example.md
 ├── 📄 01_TKoM_02. Chapter 2 - Example Title.md
@@ -160,7 +159,7 @@ Segmenting files in this way will allow for powerful individual section editing 
 
 This is the neutral, minimally-editorialized timeline of the campaign's events, mapped to their corresponding session numbers. This serves as the master reference when outlining adaptations, and will aid in retrieval of information when resolving issues. It should be enriched and corrected as needed from the reference game materials (`Reference Materials`) when generating chapters.
 
-## Phase 1: The Gathering & The Beast
+## Phase 1: The Keepers of Mordrin
 
 ### Sessions 1-15
 - The party meets on a ship bound for Alaron, thwarting a raid led by Ulfrik, but a young boy (Prince Gregory Kendrick) is kidnapped during the chaos.
@@ -179,20 +178,23 @@ This is the neutral, minimally-editorialized timeline of the campaign's events, 
 - Earning the formal title *The Keepers of Mordrin*, they forge a lifelong alliance with High Queen Alicia Kendrick.
 - They meet the secretive Malthos, a former acquaintance of Aknemeia's father and an uncle figure to Aknemeia who disappeared when she was younger.
 
-## Phase 2: Shadows and False Idols
+## Phase 2: Looming Shadow
 
-### Sessions 21-25
+### Sessions 21-31
 - The Keepers travel to the mining town of Copperwood at the behest of the Queen, and save it from a rogue Ghohlbrorn (an enormous bulette) which had been driven out of the mountains by something dark.
 - Seeking to kill the beast (or trace its origins), they delve into the abandoned dwarven city of Thol Aznan.
+- Szeth finds Istamlakh
 - There, they first discover the terrifying presence of the shadow dragon Sveraketh and spend weeks suffering from shadow exhaustion.
 - They are saved from certain death by the silver dragon Kearastrix, who sacrifices herself to cover their escape and is pulled into the Shadowfell.
 
-### Sessions 26-45
+### Sessions 32-45 [ish]
 - Returning from the mountains, the Keepers investigate a mysterious "orc problem" in the Dernall Forest.
 - They are ambushed by Kergug's Bloodeyes and discover the mindflayer Saressess impersonating the orc god Gruumsh to enslave the Thuguk, Kazaak, and Garvesh tribes as a personal army and food source.
 - This will give him an army for his "Creed of the Convergence."
 - With the help of Urtuk, the son of the slain former Chieftan, they defeat the warchief Ogol and decapitate the false idol Saressess.
 - During their time in the Dernall Forest, they discover the ancient elven ruins of Doncastle and its corrupted World Bridge, marking their first exposure to the encroaching influence of the Shadowfell.
+
+## Phase 3: The Fae Hunt
 
 ### Sessions 46-74
 - Aknemeia is ambushed by her former mentor, Vizarix (Viz), at Mearn's Meady Mug. Viz was sent by her father to forcefully bring her home, and brings a letter to the girl. Aknemeia sends a letter to her father via Viz, telling him she will not return.
@@ -211,7 +213,7 @@ This is the neutral, minimally-editorialized timeline of the campaign's events, 
 - During their time in the Feywild and Karador, Caryndal begins tracking a deeper connection to nature and the divine, hearing the whispers of Silvanus.
 - They return to Caer Callidyrr, participate in a tournament, recconnectwith some of the survivors (Caleb, Ophelie), decorate the Pickled Egg with Aribert, Tyla and Bashir, and then visit the Clytin Claw Kobolds to find that they have been farming bunnies. They end with some lingering suspicions about the Mindflayers.
 
-## Phase 3: The Slavers of Mintarn
+## Phase 4: Dragons and Tyrants
 
 ### Sessions 75-95 [NOTE: fix numbers]
 - Returning to Mintarn after their time skip, the Keepers visit with Malthos at the Jade Dragon. They discover Vizariz (Viz), and Telerath (Telly) are working alongside him.
@@ -225,7 +227,7 @@ This is the neutral, minimally-editorialized timeline of the campaign's events, 
 - The Keepers then systematically dismantle Hazan Halfkind's operations, destroying the slaver ring and establishing an abolitionist council with Dahan.
 - During this protracted conflict, Malthos's true nature is unveiled: he is the gold dragon Ioryn, the very same dragon responsible for the tragic death of Aknemeia's mother. His full story is revealed in session 95.
 
-## Phase 4: The Creed of the Convergence
+## Phase 5: Creed of the Convergence
 
 ### Sessions 96-100
 - Spurred by visions from the Pendant of Saressess, the Keepers return to Alaron to find the village of Emell slaughtered.
@@ -254,7 +256,7 @@ This is the neutral, minimally-editorialized timeline of the campaign's events, 
 - Returning to the surface, the Keepers find Urtuk reaching out for help against Gith slaver-hunters (Adlishar Rrakhma, led by Hurth) pursuing the remnants of the Illithid Saressess's forces.
 - Expanding on this conflict, the Keepers eventually broker peace, earn the respect of the Gith, and secure the promise of the *Mirha'Kith* airship if they can repair it.
 
-## Phase 5: Forging the Alliance
+## Phase 6: Forging the Alliance
 
 ### Sessions 141-150
 - The party returns to the World Tree in the Feywild to meet with Vea for guidance regarding the impending convergence.
@@ -272,7 +274,7 @@ This is the neutral, minimally-editorialized timeline of the campaign's events, 
 - Caryndal undergoes a complete transformation into a reborn cleric and capable avatar of balance, acting as Silvanus's conduit with his special oak shield.
 - A tenuous agreement with Hoondarrh is reached to aid in their plans to bring the fight to the Skybreakers.
 
-## Phase 6: The Planar Convergence
+## Phase 7: Convergence
 
 ### Sessions 162-167
 - The Keepers board the repaired Gith airship, the *Mirha'Kith*.
@@ -343,3 +345,8 @@ We are currently undertaking the major process of iteratively adapting the full 
 2. The "Flavor" Inventory. We will generate a list of "fun" asides, running jokes, and flavorful moments that breathe life into the story (e.g., the Pickled egg, the recurring confusion of Melito, the cute dragon Nyx, the Clytin Claw Kobolds and their rabbit farming). These must be interwoven into the main narrative at natural locations to add flavor and "lived-in" feel to the world and its story.
 3. Chapter Segmentation. Depending *After* completing Steps 1 and 2, we will evaluate the sheer volume of narrative material. At this point, we will decide on the final structure (e.g., a massive single volume, or a trilogy of books) and strictly segment the plot points and flavor items into specific chapters.
 4. Generation Strategy & Prompts. We will engineer a robust prompt and context-management strategy to convert the chapter segmentations into actual prose, ensuring the AI maintains stylistic consistency and lore-accuracy across the entire text.
+
+
+## Picturebook Ideas
+
+- The Keepers vs. the Ghohlbrorn
