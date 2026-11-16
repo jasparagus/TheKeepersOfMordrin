@@ -22,12 +22,32 @@ Retain the character's defining facial features. She has white hair, pointed ear
 
 # Chapterbooks
 
-## Base Prompt: 
-The art style is simple black and white pen vignette sketch. It has heavy lines and a high fantasy RPG theme. The image is simplistic, and the background is plain white.
+## Base Prompt: Interior Art Style (Black & White Vignettes)
+Clean black-and-white digital pen-and-ink vignette illustration for a children's high-fantasy chapterbook. Bold, crisp black outer contour lines with finer interior linework and clean parallel line hatching for wood grain, stone, and foliage textures. High contrast with selective solid black ink fills for deep shadows or dark magic, and minimal, subtle grayscale shading. Unbordered frameless vignette composition that fades naturally into a pure, solid stark white (#FFFFFF) background around the outer edges. Landscape orientation (3:2 or 4:3 aspect ratio). No rectangular border, no frame, no color, no messy pencil sketch lines, no paper texture.
 
-The artwork depicts a fantasy pirate village, with boats at the docks. There are taverns and a market at the shore.
+## Base Prompt: Chapterbook Characters (Monochrome Line Art)
+When including characters in Chapterbook scenes, render them with clean, approachable, slightly stylized youth-fantasy proportions, expressive eyes, and smooth unhatched skin on their faces:
 
-# Miscellaneous
+* **AKNEMEIA**: Young female tiefling sorceress with two curved solid-black horns rising from her forehead, pointed elf-like ears, and long straight light-toned hair with bangs. She wears a belted fantasy tunic and a cloak studded with dark dragonscales along the shoulders.
+* **SZETH**: Young bald human warrior-monk with a clean-shaven face, nimble build, wearing a simple white martial arts wrap robe (gi) tied with a dark sash belt and sandals. He carries a rune-carved shortsword (*Istamlakh*) or greatsword (*Beastslayer*).
+* **ERYNETH**: Young female elf ranger with pointed ears and light/white hair tied back in a high ponytail with bangs. She wears a ranger tunic with dragonscale-reinforced leather armor, arm bracers, a quiver of arrows, and a wooden longbow.
+* **CARYNDAL**: Male half-elf with pointed ears, short solid-black hair, and a neatly trimmed dark beard, wearing fantasy shoulder armor (pauldrons), breastplate, and bracers, and carrying a lute.
+
+## Chapterbook Vignette Templates
+
+### 1. Character & Action Vignette
+> "[Insert Base Interior Art Style]. The scene depicts [describe character action/pose and key props, e.g., four young fantasy adventurers battling a giant swirling water elemental at the edge of a murky swamp lake]. Framing elements like [trees / cavern rocks / tavern beams] curve gently around the sides, fading cleanly into the pure white background."
+
+### 2. Environmental / Architectural Vignette
+> "[Insert Base Interior Art Style]. A clear one-point or two-point perspective view of [describe location, e.g., a sunken halfling tavern in a village street / a torchlit dwarven stone hall]. Crisp architectural linework, clean wood and stone textures, uncluttered composition, with the outer edges of the scene tapering off into a pure white background."
+
+### 3. Iconic Object / Spot Vignette
+> "[Insert Base Interior Art Style]. A centered spot illustration of [describe object, e.g., a glowing rune-carved shortsword resting beside ancient dwarven books on a stone pedestal / a piece of parchment scorched with a fiery raven emblem]. Minimal ground lines beneath the object, surrounded by generous pure white negative space."
+
+## Base Prompt: Chapterbook Cover Art
+> "A bold, painterly dark-fantasy book cover illustration in portrait orientation (3:4 aspect ratio). Centered heraldic emblem composition featuring [central motif, e.g., a fierce silver dragon and a shadowy black dragon locked in a spiral / a stylized black raven with outstretched wings] set in front of an ornate, symmetrical golden Celtic/arcane geometric crest. Swirling ribbons of deep obsidian-black shadow smoke curl around the emblem against a [textured parchment / pitch-black] background. Classic embossed metallic gold serif typography at the top reading '[TOP TITLE]' and at the bottom reading '[BOTTOM TITLE]'."
+
+# Adult Novel / Campaign Concept Art (Digital Painting)
 *   **Art Style:** High fantasy, digital painting style (similar to official D&D 5e sourcebooks or Magic: The Gathering card art).
 *   **Lighting:** Dramatic and cinematic. Strong use of chiaroscuro (contrast between light and dark) to emphasize the campaign's core themes of Selune (light) vs. Shar (shadow).
 *   **Color Palette:** Rich, saturated colors. Ethereal blue, green, and silver for scenes involving Selune or fey magic; deep purple and obsidian black for scenes involving Shar, the Shadowfell, or the Underdark.
