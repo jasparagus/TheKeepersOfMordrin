@@ -28,21 +28,37 @@ Clean black-and-white digital pen-and-ink vignette illustration for a children's
 ## Base Prompt: Chapterbook Characters (Monochrome Line Art)
 When including characters in Chapterbook scenes, render them with clean, approachable, slightly stylized youth-fantasy proportions, expressive eyes, and smooth unhatched skin on their faces:
 
-* **AKNEMEIA**: Young female tiefling sorceress with two curved solid-black horns rising from her forehead, pointed elf-like ears, and long straight light-toned hair with bangs. She wears a belted fantasy tunic and a cloak studded with dark dragonscales along the shoulders.
+* **AKNEMEIA**: Young female tiefling sorceress with two curved solid-black horns rising from her forehead, pointed elf-like ears, and long straight light-toned hair with bangs. She wears a belted fantasy tunic/dress and a cloak studded with dark dragonscales along the shoulders.
 * **SZETH**: Young bald human warrior-monk with a clean-shaven face, nimble build, wearing a simple white martial arts wrap robe (gi) tied with a dark sash belt and sandals. He carries a rune-carved shortsword (*Istamlakh*) or greatsword (*Beastslayer*).
-* **ERYNETH**: Young female elf ranger with pointed ears and light/white hair tied back in a high ponytail with bangs. She wears a ranger tunic with dragonscale-reinforced leather armor, arm bracers, a quiver of arrows, and a wooden longbow.
+* **ERYNETH**: Young female elf ranger with pointed ears and light/white hair tied back in a high ponytail with bangs. She wears **fitted dark-shaded leather armor (cuirass/vest), trousers, and boots (never a robe or dress)**, arm bracers, a quiver of arrows, and a wooden longbow.
 * **CARYNDAL**: Male half-elf with pointed ears, short solid-black hair, and a neatly trimmed dark beard, wearing fantasy shoulder armor (pauldrons), breastplate, and bracers, and carrying a lute.
 
-## Chapterbook Vignette Templates
+## Subject Selection & Composition Guidelines (AI-Aware Best Practices)
+To maximize visual consistency across books and minimize AI generation artifacts (such as shifting facial features, mismatched outfits, or tangled multi-character poses), select and compose Chapterbook illustrations according to the following hierarchy:
 
-### 1. Character & Action Vignette
-> "[Insert Base Interior Art Style]. The scene depicts [describe character action/pose and key props, e.g., four young fantasy adventurers battling a giant swirling water elemental at the edge of a murky swamp lake]. Framing elements like [trees / cavern rocks / tavern beams] curve gently around the sides, fading cleanly into the pure white background."
+1. **Prefer Evocative Single-Item or Close-Up Spot Vignettes (Highest Priority):**
+   - Whenever a scene can be represented by an iconic object, symbol, or tight close-up action, choose that over a full group scene (e.g., *a close-up of a single hand scorching a raven emblem onto parchment beside a jar of pickled eggs*, *a sword driven into turf*, *a shattered staff and crystal*, or *three ancient dwarven tomes on a stone pedestal*).
+2. **Use Simple, Uncluttered Scene Layouts & Environments:**
+   - Keep compositions simple with **one clear focal point** and at most 1–2 supporting elements.
+   - Frequently use unpopulated or lightly populated environmental vignettes (e.g., *a sunken halfling inn*, *a torchlit dungeon corridor*, *a grand banquet table*, or *kobolds peeking from behind cavern rocks*) where character-to-character continuity is not required.
+3. **Pull the Camera Back (Wide Shots & Rear/Three-Quarter Silhouettes):**
+   - When characters or combat *are* shown, use a **slightly further-off (wide or medium-wide) camera angle** and frame characters **from behind, over the shoulder, or at a small scale** facing a large monster or landmark (as in `01_TKoM_01.1`, `07.1`, `08.1`, and `09.1`). This makes small facial and costume details much less important.
+4. **Limit Multi-Character Close-Ups & Complex Interactions:**
+   - Avoid medium/close-up shots of all four protagonists together unless essential. If a character-focused vignette is needed, feature **at most 1–2 characters** in a simple, readable pose (as in `01_TKoM_05.2` or `06.1`).
+   - Do not prompt four distinct characters simultaneously performing four different weapon/spell actions in the same frame.
+5. **Avoid In-Image Text:**
+   - Do not prompt for readable signs, banners, or book titles inside interior vignettes; rely on visual icons instead (e.g., a painted egg sign rather than the words *"The Pickled Egg"*).
 
-### 2. Environmental / Architectural Vignette
-> "[Insert Base Interior Art Style]. A clear one-point or two-point perspective view of [describe location, e.g., a sunken halfling tavern in a village street / a torchlit dwarven stone hall]. Crisp architectural linework, clean wood and stone textures, uncluttered composition, with the outer edges of the scene tapering off into a pure white background."
+## Chapterbook Vignette Templates (Ordered by Preference)
 
-### 3. Iconic Object / Spot Vignette
-> "[Insert Base Interior Art Style]. A centered spot illustration of [describe object, e.g., a glowing rune-carved shortsword resting beside ancient dwarven books on a stone pedestal / a piece of parchment scorched with a fiery raven emblem]. Minimal ground lines beneath the object, surrounded by generous pure white negative space."
+### 1. Iconic Object / Close-Up Spot Vignette (Preferred)
+> "[Insert Base Interior Art Style]. A centered, uncluttered spot illustration of [describe a single evocative object or tight close-up action, e.g., a single hand with a tiny spark of fire at the fingertip scorching a bold raven silhouette onto a square of parchment, resting on a wooden bar counter beside a glass jar of pickled eggs]. Simple composition with minimal surrounding lines and generous pure white (#FFFFFF) negative space."
+
+### 2. Simple Environmental / Creature Vignette (Preferred)
+> "[Insert Base Interior Art Style]. A clean, simple view of [describe a single location or creature focus, e.g., a towering swirling water monster rising up from a murky swamp lake framed by willow trees / a crooked halfling tavern partially sunken into a dirt sinkhole]. Uncluttered layout with a single clear focal point, tapering off cleanly into a pure white (#FFFFFF) background."
+
+### 3. Pulled-Back / Wide-Angle Action Vignette (Use Sparingly)
+> "[Insert Base Interior Art Style]. A wide, pulled-back shot of [describe large landmark or monster in the center, e.g., a massive burrowing landshark erupting from the dirt in a ruined mining town], with [1–2 small or rear-facing adventurer silhouettes in the foreground/distance] for scale. Camera is positioned far enough back that fine facial and outfit details are simplified. Framing elements fade naturally into the pure white (#FFFFFF) background."
 
 ## Base Prompt: Chapterbook Cover Art
 > "A bold, painterly dark-fantasy book cover illustration in portrait orientation (3:4 aspect ratio). Centered heraldic emblem composition featuring [central motif, e.g., a fierce silver dragon and a shadowy black dragon locked in a spiral / a stylized black raven with outstretched wings] set in front of an ornate, symmetrical golden Celtic/arcane geometric crest. Swirling ribbons of deep obsidian-black shadow smoke curl around the emblem against a [textured parchment / pitch-black] background. Classic embossed metallic gold serif typography at the top reading '[TOP TITLE]' and at the bottom reading '[BOTTOM TITLE]'."
