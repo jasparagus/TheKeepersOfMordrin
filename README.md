@@ -59,6 +59,8 @@ Books will often center around approachably-archetyped versions of "Eryneth the 
 - **Nystherix (Nix)**: [TODO: Expand]
 - **Aribert**: purveyor of the Pickled Egg [TODO: Expand]
 - **Melito**: [TODO: Expand]
+- **Koldakask**: [TODO: Expand]
+
 [TODO: expand list to include any missing recurring characters]
 
 
